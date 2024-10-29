@@ -175,8 +175,8 @@ int main() {
 
             // Отображение следующего блока
             DrawTextEx(font, "Next", {370, 200}, 30, 2, nextTheme.highlight);
-            DrawRectangleLines(360, 240, 120, 120, nextTheme.text);
-            game.DrawNextBlock(265, 250);
+            DrawRectangleLines(340, 240, 150, 130, nextTheme.text);
+            game.DrawNextBlock(265, 265);
 
             if (isPaused) {
                 DrawRectangle(0, 0, 500, 620, Fade(BLACK, 0.5f));
