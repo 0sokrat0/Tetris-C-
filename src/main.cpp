@@ -192,8 +192,8 @@ int main() {
             DrawThemeButton(font, isDarkTheme, themeTransition);
 
             DrawTextEx(font, "Next", {370, 200}, 30, 2, nextTheme.highlight);
-            DrawRectangleLines(360, 240, 120, 120, nextTheme.text);
-            game.DrawNextBlock(265, 250);
+            DrawRectangleLines(340, 240, 150, 130, nextTheme.text);
+            game.DrawNextBlock(265, 265);
 
             if (isPaused) {
                 DrawRectangle(0, 0, 500, 620, Fade(BLACK, 0.5f));
@@ -211,7 +211,7 @@ int main() {
                 alpha = fmod(alpha + 0.01f, 1.0f);
                 Color gameOverColor = Fade(RED, alpha);
 
-                // Vector2 textSize = MeasureTextEx(font, "GAME OVER", 60, 6);
+               
                 DrawTextEx(font, "GAME OVER", {80, 280}, 60, 6, gameOverColor);
                 DrawTextEx(font, "Press ENTER to Restart", {80, 340}, 30, 2, LIGHTGRAY);
 
